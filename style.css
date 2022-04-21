@@ -1,0 +1,67 @@
+0.wow {
+  width: 100px;
+}
+body {
+  background: #652ebf;
+  font-family:'Trebuchet MS';
+  color: white;
+  text-align: center;
+}
+
+#title{
+  text-align: center; 
+}
+
+#sectionWelcome{
+  height:400px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sectionTypeQuestion{
+  height:400px;
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.radio-answer{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.questions{
+  border: 5px solid yellow;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  background: #4e4eac;
+  text-align: left;
+}
+
+
+#checkAnswer{
+  margin-top: 20px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color:#5cb85c;
+  background:#5cb85c;
+  font-size: 14px;
+}
+
+#reStart{
+  margin-top: 20px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background:#f18760;
+  font-size: 14px;
+}
+
+#showAnswer{
+  margin-top: 20px;
+  text-align: left;
+}

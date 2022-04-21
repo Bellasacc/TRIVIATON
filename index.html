@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRIVIATON</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id ="title">MUNDO TRIVIA</h1>
+  <form>
+    
+    <div id="sectionWelcome">
+      <div>
+        <h3 for="txtPlayerName">Nombre del jugador:</h3>
+        <input type="text" id="txtPlayerName" placeholder="Ingrese su nombre">
+        <button type="button" id="starButton">Empezar</button>
+      </div>
+    </div>
+    
+    <div id="sectionTypeQuestion">
+      <div>
+      <h3 class="output" id="output1"></h3>
+      <button type="button" id="animationQuestionButton">Animación</button>
+      <button type="button" id="animalsQuestionButton">Animales</button>
+      </div>
+    </div>
+    
+    <!-- Seccion de preguntas de animacion -->
+    <div id="sectionAnimationQuestions">
+      <h3 class="output" id="output2"></h3>
+      <h4>Animación</h4>
+      <div class="questions">
+        <label>1. ¿Qué personaje vive en una piña debajo del mar?</label><br>
+        <input type ="radio" id="optionCalamardo" name="answerOne" class="radio-answer" value="Calamardo Tentáculos"><label for="optionCalamardo">Calamardo Tentáculos</label><br>
+        <input type ="radio" id="optionPatricio" name="answerOne" class="radio-answer" value="Patricio Estrella"><label for="optionPatricio">Patricio Estrella</label><br>
+        <input type ="radio" id="optionBob" name="answerOne" class="radio-answer" value="Bob Esponja"><label for="optionBob">Bob Esponja</label><br>
+      </div>
+      <div class="questions">
+        <label>2. ¿Cuál es la comida favorita de Popeye?</label><br>
+        <input type="radio" id="optionSpinach" name="answerTwo" class="radio-answer" value="Espinaca"><label for="optionSpinach">Espinaca</label><br>
+        <input type="radio" id="optionCarrot" name="answerTwo" class="radio-answer" value="Zanahoria"><label for="optionCarrot">Zanahoria</label><br>
+        <input type="radio" id="optionLettuce" name="answerTwo" class="radio-answer" value="Lechuga"><label for="optionLettuce">Lechuga</label><br>
+      </div>
+      <div class="questions">
+        <label>3. ¿Quién es el villano de El Rey León?</label><br>
+        <input type="radio" id="optionScar" name="answerThree" class="radio-answer" value="Scar"><label for="optionScar">Scar</label><br>
+        <input type="radio" id="optionMufasa" name="answerThree" class="radio-answer" value="Mufasa"><label for="optionMufasa">Mufasa</label><br>
+        <input type="radio" id="optionJafar" name="answerThree" class="radio-answer" value="Jafar"><label for="optionJafar">Jafar</label><br>
+      </div>
+    </div>
+    
+    <!-- Seccion de preguntas de animales -->
+    <div id="sectionAnimalQuestions">
+      <h3 class="output" id="output3"></h3>
+      <h4>Animales</h4>
+      <div class="questions">
+        <label>1. ¿Cuántas patas tienen las mariposas?</label><br>
+        <input type ="radio" id="option2" name="animalQuestionOneAnswers" class="radio-answer" value="2"><label for="option2">2</label><br>
+        <input type ="radio" id="option6" name="animalQuestionOneAnswers" class="radio-answer" value="6"><label for="option6">6</label><br>
+        <input type ="radio" id="option4" name="animalQuestionOneAnswers" class="radio-answer" value="4"><label for="option4">4</label><br>
+      </div>
+      <div class="questions">
+        <label>2. ¿Cuál es el animal terrestre más rápido?</label><br>
+        <input type="radio" id="optionGuepardo" name="animalQuestionTwoAnswers" class="radio-answer" value="Guepardo"><label for="optionGuepardo">Guepardo</label><br>
+        <input type="radio" id="optionLeon" name="animalQuestionTwoAnswers" class="radio-answer" value="León"><label for="optionLeon">León</label><br>
+        <input type="radio" id="optionGacela" name="animalQuestionTwoAnswers" class="radio-answer" value="Gacela"><label for="optionGacela">Gacela</label><br>
+      </div>
+      <div class="questions">
+        <label>3. ¿Cuál de estas especies no se ha extinguido?</label><br>
+        <input type="radio" id="optionLeonMarino" name="animalQuestionThreeAnswers" class="radio-answer" value="Leon marino japonés"><label for="optionLeonMarino">Leon marino japonés</label><br>
+        <input type="radio" id="optionTigre" name="animalQuestionThreeAnswers" class="radio-answer" value="Tigre de tasmania"><label for="optionTigre">Tigre de tasmania</label><br>
+        <input type="radio" id="optionDragon" name="animalQuestionThreeAnswers" class="radio-answer" value="Dragón de komodo"><label for="optionDragon">Dragón de komodo</label><br>
+      </div>
+    </div>
+
+    <div id="sectionAnswers">
+      <button type="button" class="checkAnswer" id="checkAnswer">Responder y ver resultados</button>
+      <button type="button" class="reStart" id="reStart"> Reiniciar </button>
+      <h3 class="output" id="output4"></h3>
+      <div id="showAnswer" class="answers"></div> 
+    </div>
+    
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
